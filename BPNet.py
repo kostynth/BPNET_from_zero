@@ -89,8 +89,8 @@ class NN:
             self.w.append(self.b)
 
             if i % 100 == 0:
-                #print(f'Epoch {i}: {self.mse(x, y)}')  # 打印每100次迭代的损失值
-                print(f'{self.mse(x, y)},')
+                print(f'Epoch {i}: {self.mse(x, y)}')  # 打印每100次迭代的损失值
+
 
     def predict(self, x: np.ndarray) -> np.ndarray:
         return self.forward(x)  # 返回前向传播的结果

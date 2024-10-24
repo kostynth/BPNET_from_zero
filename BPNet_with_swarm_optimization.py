@@ -139,8 +139,8 @@ class NN:
                     gBest_coords[0] = swarm[i][0]
                     gBest_coords[1] = swarm[i][1]
             if j % 100 == 0:
-                #print(f'Epoch{j} : Loss {gBest}')
-                print(f'{gBest},')
+                print(f'Epoch{j} : Loss {gBest}')
+
         # Присваиваем сети глобально лучшие координаты (веса)
         self.w = gBest_coords[0]
         self.b = gBest_coords[1]
